@@ -1,0 +1,9 @@
+# Matplotlib style for scatter plots
+
+# Set markers (style, color, no lines)
+axes.prop_cycle : (cycler('color', ['037ef3', '009000', 'e90200', '2a2a2a', 'ffc600', '9467bd'])+ cycler('ls', ['-', '-', '-', '-', '-', '-'])+ cycler('marker', ['o', 's', '^', 'D', 'X', '8']))
+
+# Set marker size
+lines.linewidth : 1
+lines.markersize : 3
+lines.markerfacecolor : none
