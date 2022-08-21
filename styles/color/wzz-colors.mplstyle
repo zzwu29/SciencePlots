@@ -1,0 +1,4 @@
+# SciencePlots color cycle
+
+# Set color cycle: popkart colors
+axes.prop_cycle : (cycler('color', ['037ef3', '009000', 'e90200', '2a2a2a', 'ffc600', '9467bd'])+ cycler('ls', ['-', '-', '-', '-', '-', '-']))
