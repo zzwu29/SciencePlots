@@ -1,0 +1,65 @@
+# Matplotlib style for IEEE plots
+# This style should work for most two-column journals
+
+# Set color cycle: lancet
+# axes.prop_cycle : (cycler('color', ['00468b', 'ed0000', '42b540', '0099b4', '925e9f', 'fdaf91', 'ad002a', 'adb6b6', '1b1919'])+ cycler('ls', ['-', '-', '-', '-', '-', '-', '-', '-', '-'])+ cycler('marker', ['o', 's', '^', 'D', 'x', 'h', 'p', '*', 'X']))
+axes.prop_cycle : (cycler('color', ['00468b', 'ed0000', '42b540', '0099b4', '925e9f', 'fdaf91', 'ad002a', 'adb6b6', '1b1919'])+ cycler('ls', ['-', '-', '-', '-', '-', '-', '-', '-', '-'])+ cycler('marker', ['.', '.', '.', '.', '.', '.', '.', '.', '.']))
+
+# Set default figure size
+figure.figsize : 3.3, 2.5
+
+# Set x axis
+xtick.direction : in
+xtick.major.size : 3
+xtick.major.width : 0.5
+xtick.minor.size : 1.5
+xtick.minor.width : 0.5
+xtick.minor.visible : False
+xtick.top : True
+
+# Set y axis
+ytick.direction : in
+ytick.major.size : 3
+ytick.major.width : 0.5
+ytick.minor.size : 1.5
+ytick.minor.width : 0.5
+ytick.minor.visible : False
+ytick.right : True
+
+# Axes and Grid lines
+axes.grid : False
+axes.axisbelow : True
+axes.linewidth : 0.5
+grid.linestyle : --
+grid.color : k
+grid.alpha : 0.5
+grid.linewidth : 0.5
+
+# Legend
+legend.frameon : False
+legend.framealpha : 1.0
+legend.fancybox : True
+legend.numpoints : 1
+
+# Set line widths
+lines.linewidth : 1.0
+lines.markersize : 3
+lines.markerfacecolor : none
+
+# Always save as 'tight'
+savefig.bbox : tight
+savefig.pad_inches : 0.05
+
+# Font sizes
+font.size : 10
+font.family : sans-serif
+# [Calibri, Ebrima, Tahoma, DejaVu Sans, Arial, Verdana]
+font.sans-serif : Calibri
+# ['dejavusans', 'dejavuserif', 'cm', 'stix', 'stixsans', 'custom']
+mathtext.fontset : cm
+
+# Use LaTeX for math formatting
+## make slow and unuse the mathtext.fontset!!!
+text.usetex : False
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb}
+
