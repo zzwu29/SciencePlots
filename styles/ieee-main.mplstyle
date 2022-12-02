@@ -3,9 +3,11 @@
 
 # Set color cycle: lancet
 # axes.prop_cycle : (cycler('color', ['00468b', 'ed0000', '42b540', '0099b4', '925e9f', 'fdaf91', 'ad002a', 'adb6b6', '1b1919'])+ cycler('ls', ['-', '-', '-', '-', '-', '-', '-', '-', '-'])+ cycler('marker', ['o', 's', '^', 'D', 'x', 'h', 'p', '*', 'X']))
-axes.prop_cycle : (cycler('color', ['00468b', 'ed0000', '42b540', '0099b4', '925e9f', 'fdaf91', 'ad002a', 'adb6b6', '1b1919'])+ cycler('ls', ['-', '-', '-', '-', '-', '-', '-', '-', '-'])+ cycler('marker', ['.', '.', '.', '.', '.', '.', '.', '.', '.']))
+# axes.prop_cycle : (cycler('color', ['00468b', 'ed0000', '42b540', '0099b4', '925e9f', 'fdaf91', 'ad002a', 'adb6b6', '1b1919'])+ cycler('ls', ['-', '-', '-', '-', '-', '-', '-', '-', '-'])+ cycler('marker', ['.', '.', '.', '.', '.', '.', '.', '.', '.']))
+axes.prop_cycle : (cycler('color', ['0000ff', 'ff0000', '008000', 'ff00ff', '00c0ff', 'ffc000', '000000'])+ cycler('ls', ['-', '-', '-', '-', '-', '-', '-'])+ cycler('marker', ['.', '.', '.', '.', '.', '.', '.']))
 
 # Set default figure size
+# figure.figsize : 6.4, 4.8
 figure.figsize : 3.3, 2.5
 
 # Set x axis
@@ -43,7 +45,7 @@ legend.numpoints : 1
 
 # Set line widths
 lines.linewidth : 1.0
-lines.markersize : 3
+lines.markersize : 3.0
 lines.markerfacecolor : none
 
 # Always save as 'tight'
@@ -51,10 +53,16 @@ savefig.bbox : tight
 savefig.pad_inches : 0.05
 
 # Font sizes
-font.size : 10
-font.family : sans-serif
+#!!!!! delete fontlist-v330.json in user/.matplotlib if font set not works
+font.size : 8
 # [Calibri, Ebrima, Tahoma, DejaVu Sans, Arial, Verdana]
-font.sans-serif : Calibri
+#font.family : sans-serif
+#font.sans-serif : Latin Modern Sans
+
+# ['CMU Serif', 'Latin Modern Roman', 'Cardo']
+font.family : serif
+font.serif: CMU Serif
+
 # ['dejavusans', 'dejavuserif', 'cm', 'stix', 'stixsans', 'custom']
 mathtext.fontset : cm
 
