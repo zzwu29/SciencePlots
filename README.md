@@ -1,4 +1,4 @@
-Science Plots
+Modified Science Plots (!! not original project)
 =============
 
 [![PyPI version](https://badge.fury.io/py/SciencePlots.svg)](https://badge.fury.io/py/SciencePlots)
